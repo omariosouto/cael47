@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; }
+.cabecalho {
+	background: #e7f0f5;
+	/*padding: 16px;*/
+}
+
+body {
+	background: #e8e8e8;
+}
