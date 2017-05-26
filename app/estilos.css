@@ -7,3 +7,9 @@
 body {
 	background: #e8e8e8;
 }
+
+.cartao {
+	background: #EBED40;
+	margin: 16px;
+	padding: 16px;
+}
