@@ -3,22 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Título de Página</title>
-	<link rel="stylesheet" href="./css/botaoSync.css">
-	<link rel="stylesheet" href="./css/cabecalho.css">
-	<link rel="stylesheet" href="./css/cartao.css">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="stylesheet" href="./css/cabecalho.css">
+	<link rel="stylesheet" href="./css/opcoesDaPagina.css">
+	<link rel="stylesheet" href="./css/mural.css">
+	<link rel="stylesheet" href="./css/cartao.css">
+<!-- 	<link rel="stylesheet" href="./css/botaoSync.css">
 	<link rel="stylesheet" href="./css/login.css">
 	<link rel="stylesheet" href="./css/loginForm.css">
 	<link rel="stylesheet" href="./css/loginStatus.css">
-	<link rel="stylesheet" href="./css/mural.css">
-	<!-- <meta name="viewport" content="width=device-width"> -->
-</head>
+	<link rel="stylesheet" href="./css/novoCartao.css">
+	<link rel="stylesheet" href="./css/opcoesDoCartao.css">
+ --></head>
 <body>
 	<header class="container cabecalho">
 		<h1>CEEP</h1>
+		<button id="mudaLayout" onclick="mudaLayout()">Linhas</button>
 	</header>
 	
-	<section class="container mural">
+	<section class="container mural mural--linhas">
 		<div class="cartao">
 			<p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit asperiores magni, neque quidem consequuntur blanditiis ipsum alias? Iusto magnam earum tenetur repudiandae blanditiis velit omnis doloremque, reiciendis quasi sint. Omnis.</p>
 		</div>
@@ -35,7 +39,12 @@
 			<p class="cartao-conteudo">Porro dignissimos nemo nam aliquid, quam quisquam obcaecati eveniet quae error ipsa hic ea, animi, fugiat ullam ut, voluptates quos! Ea, quia, ex. Iure atque excepturi ea consectetur voluptates, vero.</p>
 		</div>
 	</section>
-
+	
+	<script>
+		function mudaLayout() {
+			document.querySelector('.mural').classList.toggle('mural--linhas');
+		}
+	</script>
 
 </body>
 </html>
